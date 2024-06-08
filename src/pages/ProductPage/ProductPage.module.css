@@ -1,0 +1,41 @@
+.product-sort-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+.product-filter-section {
+  display: flex;
+  justify-content: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+}
+
+.product-load-more {
+  background-color: #69c019;
+  align-self: center;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 16px;
+  color: white;
+}
+
+.product-load-more:hover {
+  background-color: #4f8f12;
+}
+
+@media only screen and (min-width: 700px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
