@@ -8,10 +8,10 @@ interface ProductModuleProps {
   products: ProductType[];
 }
 const ProductModule: FC<ProductModuleProps> = ({ isLoading, products }) => {
-  if (isLoading) {
+  if (!isLoading) {
     return (
       <>
-        {new Array(10).fill(1).map((item, index) => (
+        {new Array(8).fill(1).map((item, index) => (
           <ProductLoading key={index + item} />
         ))}
       </>
